@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+html, body{   
+    height: 100%;
+    width: 100%;
+    font-family: 'Instrument Sans'
+}
+h3{
+    font-weight: bold;
+}
+body::-webkit-scrollbar{
+    display: none;
+    background-color: white
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 6vw;
+    align-items: center;
+    width: 100%;
+}
+nav h2{
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar a{
+    text-decoration: none;
+    padding-left: 40px;
+    font-size: 1.090rem;
+    color: black;
+}
+.mobile{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 6vw;
+    align-items: flex-start;
+    width: 100%;
+}
+.mobile h2{
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.navbar-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.navbar-mobile a{
+    text-decoration: none;
+    padding-bottom: 40px;
+    font-size: 1.090rem;
+    color: black;
+}
+.contactbutton{
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 1.090rem;
+}
+.hero{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 15vh 0 10vh 6vw ;
+}
+.hero h3{
+    width: 50%;
+    letter-spacing: -.031rem;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+.hero h1{
+    color: orangered;
+    letter-spacing: -.031rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 11rem;
+    font-weight: 400;
+    line-height: .75;
+    position: relative;
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.img1{
+    width: 72%;
+    height: 100vh;
+    overflow: hidden;
+}
+.img1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.img2{
+    width: 26%;
+    height: 100%;
+    overflow: hidden;
+}
+.img2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.introsec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10vh 6vw;
+    justify-content: space-between;
+}
+.introsec h3{
+    letter-spacing: -.031rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    line-height: 1.15;
+}
+.introsec p{
+    color: rgba(0, 0, 0, 0.554);
+    margin-bottom: 1.5rem;
+    width: 60%;
+    font-size: 2rem;
+    line-height: 1.4
+}
+.achivements{
+    display: flex;
+    width: 100%;
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 2.5rem;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    place-items: start;
+    padding-top: 2.5rem;
+}
+.text{
+    border-top: .188rem solid orangered;
+    width: 100%;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+#img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.values{
+    background-color: #1c1f1d;
+    color: white;
+    padding: 7.5rem 6vw;
+}
+.values h2{
+    letter-spacing: -.031rem;
+    padding-bottom: 2.5rem;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.15;
+}
+.valuecard span{
+    color: orangered
+}
+
+.diffvalue{
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    align-items: stretch;
+    display: grid;
+}
+.valuecard h3{
+    letter-spacing: -.031rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.15;
+}
+.valuecard p{
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+.ourteam{
+    display: flex;
+    flex-direction: column;
+    margin: 10vh 6vh;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2.5rem
+}
+.heading h3{
+    letter-spacing: -.031rem;
+    font-size: 3rem;
+    line-height: 1.15;
+}
+.heading a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.125rem;
+}
+.teamcards{
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 4rem;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.memberimg{
+    width: 100%;
+    overflow: hidden;
+}
+.memberimg img{
+    width: 100%;
+    object-fit: cover;
+}
+.membersdetails{
+    border-bottom: .063px solid rgba(0, 0, 0, 0.7);
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    padding: 2rem 1.5rem;
+    display: flex;
+    position: relative
+}
+.membersdetails h4{
+    font-size: 2.25rem;
+    font-weight: 300;
+    line-height: 1.15;
+    letter-spacing: -.031rem;
+}
+.membersdetails p{
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 1rem;
+    font-size: 1.125rem;
+}
+.testimonials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10vh 6vw;
+}
+.testimonials1{
+    width: 50vw;
+    padding: 2rem;
+    background-color:white;
+}
+.testimonials1 h3{
+    font-size: 1.9rem;
+    font-weight: lighter;
+    padding: 3vh 0 5vh;
+}
+#info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.linfo{
+    background-image: url();
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: brown;
+}
+.Rinfo h6{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.Rinfo p{
+    margin-top: .25rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 25vh 6vh 40vh 6vh;
+    z-index: 1;
+}
+.contact h3{
+    text-align: center;
+    padding-bottom: 30vh;
+    max-width: 60rem;
+    font-size: 5rem;
+    font-weight: normal;
+}
+
+footer {
+    position: relative;
+}
+
+footer a {
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+}
+.get-in-touch-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    width: 500px;
+    height: 500px;
+
+    border : 5px solid orangered;
+    border-radius: 100%;
+
+    position: absolute;
+    top: -350px;
+    left: 33vw;
+    z-index: -1;
+}
+footer {
+    position: relative;
+    background-color: white;
+    padding: 10vh 6vw;
+    border-top: 2px solid black;
+
+}
+
+.upperfooter{
+    background-color: white;
+    align-items: flex-start;
+    display: flex;
+    gap: 20rem;
+    padding-bottom: 40px;
+    z-index: 2;
+}
+.contactlink h3{
+    letter-spacing: -.031rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.15;
+}
+.contactlink a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.linksG1{
+    display: flex;
+    flex-direction: column;
+}
+.linksG1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 40;
+    padding-bottom: 3vh;
+}
+.linksG2{
+    display: flex;
+    flex-direction: column;
+}
+.linksG2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 40;
+    padding-bottom: 3vh;
+}
+.lowerfooter h3{
+    font-size: 56px;
+    font-weight: lighter;
+    width: 60%;
+    margin-top: 100px;
+
+}
+.lowerfooter h1{
+    color: orangered;
+    letter-spacing: -.031rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 11rem;
+    font-weight: 400;
+    line-height: .75;
+    position: relative;
+}
+.lowerfooter p{
+    font-size: 1.110rem;
+    margin-top: 10vh;
+}
+.lowerfooter p a{
+    color: orangered;
+    font-size: 1.110rem;
+}
+@media screen and (max-width:600px){
+    .hero{
+        margin-bottom: 0;
+    }
+    .hero h3{
+        width: 100%;
+        font-size: 1.75rem;
+    }
+    .hero h1{
+        font-size: 5rem;
+    }
+    .images{
+        flex-direction: column;
+    }
+    .img1{
+        width: 100%;
+        height: 50%;
+    }
+    .img2{
+        display: none;
+    }
+    .introsec h3{
+        font-size: 2.25rem;
+    }
+    .introsec p{
+        width: 100%;
+        font-size: 1.25rem;
+    }
+    .achivements{
+        flex-direction: column;
+    }
+    .text{
+        font-size: 1.75rem;
+    }
+    .values h2{
+        font-size: 2.25rem;
+    }
+    .diffvalue{
+        grid-template-columns: 1fr;
+        grid-row-gap: 2.5rem;
+    }
+    .valuecard h3{
+        font-size: 1.75rem;
+    }
+    .ourteam{
+        align-items: flex-start;
+    }
+    .heading{
+        flex-direction: column;
+        align-items: flex-start;
+        grid-row-gap: 2rem;
+    }
+    .heading h3{
+        font-size: 2.25rem;
+    }
+    .teamcards{
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 2.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-columns: 1fr;
+    }
+    .membersdetails h4{
+        font-size: 1.75rem;
+    }
+    .testimonials1 h3{
+        font-size: 1.5rem;
+    }.testimonials1{
+        width: 100%;
+    }
+    .contact h3{
+        font-size: 3rem ;
+    }
+    .upperfooter{
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 0;
+    }
+    .contactlink h3{
+        font-size: 2.25rem;
+    }
+    .contactlink{
+        padding-bottom: 2rem;
+    }
+    .get-in-touch-btn{
+        width: 28rem;
+        height: 28rem;
+        left: 6vh;
+    }
+    .lowerfooter h3{
+        width: 100%;
+        font-size: 1.75rem;
+    }
+    .lowerfooter h1{
+        font-size: 5rem;
+    }
+}

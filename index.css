@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+html, body{   
+    height: 100%;
+    width: 100%;
+    font-family: 'Instrument Sans'
+}
+h3{
+    font-weight: bold;
+}
+body::-webkit-scrollbar{
+    display: none;
+    background-color: white
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 6vw;
+    align-items: center;
+    width: 100%;
+}
+nav h2{
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar a{
+    text-decoration: none;
+    padding-left: 40px;
+    font-size: 1.090rem;
+    color: black;
+}
+.contactbutton{
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 1.090rem;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    margin: 10vh 8vw;
+    justify-content: space-between;
+}
+.heroL h3{
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+.heroL p{
+    color: rgba(0, 0, 0, 0.554);
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+.heroL a{
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: black;
+    opacity: 40;
+}
+.heroR{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 3vw;
+}
+.image1 {
+    width: 27vw;
+    overflow: hidden;
+    padding-right: 2vw;
+}
+.image1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image2 {
+    overflow: hidden;
+    width: 20vw;
+}
+.image2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.excel{
+    display: flex;
+    align-items: flex-start;
+    padding:15vh 6vw;
+    justify-content: space-between;
+    background-color: rgb(18, 17, 17);
+    color: white;
+}
+.excelleft{
+    width: 40%;
+    padding-right: 20px;
+}
+.excelleft h3{
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+.excelleft p{
+    font-size: 1.125rem;
+    padding-right: 2.5vw;
+    padding-bottom: 3rem;
+}
+.excelleft a{
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: rgb(254, 253, 253);
+    font-weight: 100;
+}
+.excelright{
+    width: 60%;
+    padding-left: 40px ;
+}
+.excelright h3{
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+    padding-top: 30px;
+}
+.excelright h3 a{
+    text-decoration: none;
+    color: white;
+}
+.brands h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.15;
+    margin: 8vw;
+}
+.featuredwork{
+    display: flex;
+    margin: 20vh 6vw;
+    justify-content: space-between
+}
+.card-container a{
+    text-decoration: none;
+    color: black;
+}
+.card1{
+    width: 40vw;
+    height: 50vw;
+    overflow: hidden;
+}
+.card-container h3{
+    letter-spacing: -.031rem;
+    margin-top: 0;
+    width: 40vw;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.15;
+    padding: 4rem 0;
+}
+
+.card1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card2{
+    width: 40vw;
+    height: 30vw;
+    overflow: hidden;
+}
+
+.card2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card3{
+    width: 40vw;
+    height: 40vw;
+    overflow: hidden;
+}
+.card3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.rightsec{
+    padding-top: 25vh;
+}
+.toptextleft h2{
+    letter-spacing: -.031rem;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.15;
+}
+.toptextleft p{
+    margin-bottom: 4rem;
+}
+.toptextleft p a{
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: black;
+}
+
+.about{
+    height: 120vh;
+    padding: 10vh 0 10vh 25vh;
+    background-color: black;
+}
+.overlayabout{
+    background-image: url(https://cdn.prod.website-files.com/664ec18453151a999905bd20/67069e408258dd9dcd682eaa_Hero%20Image.avif);
+    color: white;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding-right: 42vw;
+    padding-left: 10vh;
+}
+.OLcontent h3{
+    letter-spacing: -.031rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    line-height: 1.15;
+}
+.OLcontent p{
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+.OLcontent a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.testimonials{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    margin: 10vh 6vw;
+}
+.testimonials1{
+    width: 40vw;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: gainsboro;
+}
+.testimonials1 h3{
+    font-size: 1.9rem;
+    font-weight: lighter;
+    padding: 3vh 0 5vh;
+}
+
+.T1{
+    display: none;
+}
+.T2{
+    display: none;
+}
+#info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.linfo{
+    background-image: url();
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: brown;
+}
+.Rinfo h6{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.Rinfo p{
+    margin-top: .25rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 25vh 6vh 40vh 6vh;
+    z-index: 1;
+}
+.contact h3{
+    text-align: center;
+    padding-bottom: 30vh;
+    max-width: 60rem;
+    font-size: 5rem;
+    font-weight: normal;
+
+}
+
+footer {
+    position: relative;
+}
+
+footer a {
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+}
+
+.get-in-touch-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    width: 500px;
+    height: 500px;
+
+    border : 5px solid orangered;
+    border-radius: 100%;
+
+    position: absolute;
+    top: -350px;
+    left: 33vw;
+    z-index: -1;
+}
+
+
+footer {
+    position: relative;
+    background-color: white;
+    padding: 10vh 6vw;
+    border-top: 2px solid black;
+
+}
+
+.upperfooter{
+    background-color: white;
+    align-items: flex-start;
+    display: flex;
+    gap: 20rem;
+    padding-bottom: 40px;
+    z-index: 2;
+}
+.contactlink h3{
+    letter-spacing: -.031rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.15;
+}
+.contactlink a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.linksG1{
+    display: flex;
+    flex-direction: column;
+}
+.linksG1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 40;
+    padding-bottom: 1.5rem;
+}
+.linksG2{
+    display: flex;
+    flex-direction: column;
+}
+.linksG2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 40;
+    padding-bottom: 1.5rem;
+}
+.lowerfooter h3{
+    font-size: 56px;
+    font-weight: lighter;
+    width: 60%;
+    margin-top: 100px;
+
+}
+.lowerfooter h1{
+    color: orangered;
+    letter-spacing: -.031rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 11rem;
+    font-weight: 400;
+    line-height: .75;
+    position: relative;
+}
+.lowerfooter p{
+    font-size: 1.110rem;
+    margin-top: 10vh;
+}
+.lowerfooter p a{
+    color: orangered;
+    font-size: 1.110rem;
+}
+@media screen and (max-width:600px){
+    h3{
+        font-size: 2.25rem;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+    .heroL{
+        padding-bottom: 5vh;
+    }
+    .image1{
+        width: 100%;
+    }
+    .image2{
+        width: 100%;
+    }
+    .heroR{
+        padding: 0;
+    }
+    .excel{
+        display: flex;
+        flex-direction: column;
+    } 
+    .excelleft{
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 4vh;
+    }
+    .excelright{
+        width: 100%;
+    }
+    .excelleft h3{
+        font-size: 2.25rem;
+    }  
+    .excelleft p{
+        padding-right: 0%;
+    }
+    .excelright{
+        padding-left: 0px;
+    }
+    .excelright h3{
+        font-size: 1.5rem;
+    }
+    .brands h2{
+        font-size: 2.25rem;
+    }
+    .featuredwork{
+        flex-direction: column-reverse;
+        margin-top: 7.5vh;
+    }
+    .toptextleft h2{
+        font-size: 2.25rem;
+    }
+    .card1{
+        width: 100%;
+        height: 100%;
+    }
+    .card2{
+        width: 100%;
+        height: 100%;
+    }.card3{
+        width: 100%;
+        height: 100%;
+    }
+    .card-container h3{
+        font-size: 1.75rem;
+        width: 100%;
+        padding-bottom: 1.75rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        margin-bottom: 0%;
+        padding-top: 1.75rem;
+    }
+    .about{
+        padding: 0%;
+    }
+    .overlayabout{
+        padding: 0 6vw;
+    }
+    .OLcontent h3{
+        font-size: 2.25rem;
+    }
+    .testimonials1 h3{
+        font-size: 1.5rem;
+    }
+    .T3{
+        display: none;
+    }
+    .testimonials1{
+        width: 100%;
+    }
+    .contact h3{
+        font-size: 3rem ;
+    }
+    .upperfooter{
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 0;
+    }
+    .contactlink h3{
+        font-size: 2.25rem;
+    }
+    .contactlink{
+        padding-bottom: 2rem;
+    }
+    .get-in-touch-btn{
+        width: 28rem;
+        height: 28rem;
+        left: 6vh;
+
+    }
+    .lowerfooter h3{
+        width: 100%;
+        font-size: 1.75rem;
+    }
+    .lowerfooter h1{
+        font-size: 5rem;
+    }
+
+}

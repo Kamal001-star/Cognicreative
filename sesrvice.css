@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+html, body{   
+    height: 100%;
+    width: 100%;
+    font-family: 'Instrument Sans'
+}
+h3{
+    font-weight: bold;
+}
+body::-webkit-scrollbar{
+    display: none;
+    background-color: white
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 6vw;
+    align-items: center;
+    width: 100%;
+}
+nav h2{
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar a{
+    text-decoration: none;
+    padding-left: 40px;
+    font-size: 1.090rem;
+    color: black;
+}
+.contactbutton{
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 1.090rem;
+}
+.hero{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10vh 6vh 0 6vw ;
+}
+.hero h3{
+    letter-spacing: -.031rem;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+.hero h1{
+    color: orangered;
+    letter-spacing: -.031rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 11rem;
+    font-weight: 400;
+    line-height: .75;
+    position: relative;
+}
+.Image{
+    margin-left: 6vh;
+    width: 100%;
+    overflow: hidden;
+}
+.Image img{
+    width: 100%;
+    object-fit: cover;
+}
+.work-ways{
+    display: flex;
+    align-items: flex-start;
+    padding:15vh 6vw;
+    justify-content: space-between;
+}
+.work-waysleft{
+    width: 40%;
+    padding-right: 20px;
+}
+.work-waysleft h3{
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+.work-waysleft p{
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    width: 80%;
+}
+.work-waysright{
+    width: 60%;
+    padding-left: 40px ;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.172);
+    padding: 2rem 0;
+}
+.accordion-circle {
+    border: .063rem solid rgba(0, 0, 0, 0.041) ;
+    background-color: white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    transition: background-color .4s cubic-bezier(.23,1,.32,1);
+    display: flex;
+    position: relative;
+}
+.para{
+    display: none;
+}
+g{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.work-waysright span{
+    color: orangered;
+}
+.work-waysright h3 a{
+    text-decoration: none;
+    color: black;
+}
+.branding{
+    display: flex;
+    flex-direction: column;
+    margin: 20vh 6vw;
+    justify-content: center;
+    align-items: center;
+}
+.uppersec{
+    display: flex;
+    align-items: flex-start;
+}
+.leftB{
+    width: 53rem;
+}
+.leftB h3{
+    letter-spacing: -.031rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.15;
+}
+.uppersec h4{
+    letter-spacing: -.031rem;
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.15;
+}
+.uppersec p{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    width: 74%;
+}
+.lowersec{
+    grid-column-gap: 4rem;
+    grid-template-rows: auto;
+    grid-template-columns: 60%;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    place-items: start stretch;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+}
+.card1{
+    width: 100%;
+    overflow: hidden;
+}
+.card1 img{
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+.card2{
+    width: 100%;
+    overflow: hidden;
+}
+.card2 img{
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+.web-Design{
+    display: flex;
+    flex-direction: column;
+    margin: 20vh 6vw;
+    justify-content: center;
+    align-items: center;
+}
+.uppersecWD{
+    display: flex;
+    align-items: flex-start;
+}
+.leftWD{
+    width: 53rem;
+}
+.leftWD h3{
+    letter-spacing: -.031rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.15;
+}
+.uppersecWD h4{
+    letter-spacing: -.031rem;
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.15;
+}
+.uppersecWD p{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    width: 74%;
+}
+.pill-label-wrapper {
+    grid-column-gap: .5rem;
+    grid-row-gap: .5rem;
+    flex-flow: wrap;
+    margin-top: 2rem;
+    display: flex;
+}
+.pill-label {
+    border: 1px solid black;
+    border-radius: 10rem;
+    padding: 1.5rem;
+    font-size: 1.125rem;
+    display: inline-flex;
+}
+.lowersecWD{
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+.card-container a{
+    text-decoration: none;
+    color: black;
+}
+.card3{
+    width: 30%;
+    height: 25vw;
+    overflow: hidden;
+}
+.card-container h3{
+    letter-spacing: -.031rem;
+    margin-top: 0;
+    width: 40vw;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.15;
+    padding: 4rem 0;
+}
+.card3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card4{
+    width: 65%;
+    height: 50vw;
+    overflow: hidden;
+}
+.card4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Digital-Marketing{
+    display: flex;
+    flex-direction: column;
+    margin: 20vh 6vw;
+    justify-content: center;
+    align-items: center;
+}
+.uppersecDM{
+    display: flex;
+    align-items: flex-start;
+}
+.leftDM{
+    width: 53rem;
+}
+.leftDM h3{
+    letter-spacing: -.031rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.15;
+}
+.uppersecDM h4{
+    letter-spacing: -.031rem;
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.15;
+}
+.uppersecDM p{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    width: 74%;
+}
+.lowersecDM{
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+.card5{
+    width: 30%;
+    height: 25vw;
+    overflow: hidden;
+}
+.card5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card6{
+    width: 65%;
+    height: 50vw;
+    overflow: hidden;
+}
+.card6 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 25vh 6vh 40vh 6vh;
+    z-index: 1;
+}
+.contact h3{
+    text-align: center;
+    padding-bottom: 30vh;
+    max-width: 60rem;
+    font-size: 5rem;
+    font-weight: normal;
+}
+footer {
+    position: relative;
+}
+
+footer a {
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+}
+
+.get-in-touch-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    width: 500px;
+    height: 500px;
+
+    border : 5px solid orangered;
+    border-radius: 100%;
+
+    position: absolute;
+    top: -350px;
+    left: 33vw;
+    z-index: -1;
+}
+
+footer {
+    position: relative;
+    background-color: white;
+    padding: 10vh 6vw;
+    border-top: 2px solid black;
+
+}
+
+.upperfooter{
+    background-color: white;
+    align-items: flex-start;
+    display: flex;
+    gap: 20rem;
+    padding-bottom: 40px;
+    z-index: 2;
+}
+.contactlink h3{
+    letter-spacing: -.031rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.15;
+}
+.contactlink a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.linksG1{
+    display: flex;
+    flex-direction: column;
+}
+.linksG1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 40;
+    padding-bottom: 3vh;
+}
+.linksG2{
+    display: flex;
+    flex-direction: column;
+}
+.linksG2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 40;
+    padding-bottom: 3vh;
+}
+.lowerfooter h3{
+    font-size: 56px;
+    font-weight: lighter;
+    width: 60%;
+    margin-top: 100px;
+
+}
+.lowerfooter h1{
+    color: orangered;
+    letter-spacing: -.031rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 11rem;
+    font-weight: 400;
+    line-height: .75;
+    position: relative;
+}
+.lowerfooter p{
+    font-size: 1.110rem;
+    margin-top: 10vh;
+}
+.lowerfooter p a{
+    color: orangered;
+    font-size: 1.110rem;
+}
+@media screen and (max-width:600px){
+    .hero{
+        margin-bottom: 0;
+    }
+    .hero h3{
+        width: 100%;
+        font-size: 1.75rem;
+    }
+    .hero h1{
+        font-size: 5rem;
+    }
+    .Image{
+       margin: 0; 
+    }
+    .work-ways{
+        flex-direction: column;
+    }
+    .work-waysleft{
+        width: 100%;
+        padding-right: 0;
+    }
+    .work-waysleft h3{
+        font-size: 2.25rem;
+    }
+    .work-waysleft p{
+        width: 100%;
+    }
+    .work-waysright{
+        width: 100%;
+        padding: 0;
+    }
+    .branding{
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .uppersec{
+        flex-direction: column;
+        grid-row-gap: 1.75rem
+    }
+    .leftB{
+        width: 100%;
+    }
+
+    .leftB h3{
+        font-size: 2.25rem;
+    }
+    .uppersec h4{
+        font-size: 1.75rem;
+    }
+    .uppersec p{
+        width: 100%;
+    }
+    .lowersec{
+        flex-direction: column;
+    }
+    .card1{
+        width: 100%;
+        height: 100%;
+    }
+    .card2{
+        width: 100%;
+        height: 100%;
+    }
+    .card3{
+        width: 100%;
+        height: 100%;
+    }
+    .card4{
+        width: 100%;
+        height: 100%;
+    }
+    .card5{
+        width: 100%;
+        height: 100%;
+    }
+    .card6{
+        width: 100%;
+        height: 100%;
+    }
+    .card-container h3{
+        font-size: 1.75rem;
+        width: 100%;
+        padding: 1.75rem 0;
+    }
+    .pill-label{
+        padding: 1rem;
+        font-size: .875rem;
+    }
+    .pill-label-wrapper{
+        margin-top: 1.25rem;
+    }
+    .web-Design{
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .uppersecWD{
+        flex-direction: column;
+        grid-row-gap: 1.75rem;
+    }
+    .leftWD{
+        width: 100%;
+    }
+
+    .leftWD h3{
+        font-size: 2.25rem;
+    }
+    .uppersecWD h4{
+        font-size: 1.75rem;
+    }
+    .uppersecWD p{
+        width: 100%;
+    }
+    .lowersecWD{
+        flex-direction: column;
+    }
+    .Digital-Marketing{
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .uppersecDM{
+        flex-direction: column;
+        grid-row-gap: 1.75rem;
+    }
+    .leftDM{
+        width: 100%;
+    }
+
+    .leftDM h3{
+        font-size: 2.25rem;
+    }
+    .uppersecDM h4{
+        font-size: 1.75rem;
+    }
+    .uppersecDM p{
+        width: 100%;
+    }
+    .lowersecDM{
+        flex-direction: column;
+    }
+    .contact h3{
+        font-size: 3rem ;
+    }
+    .upperfooter{
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 0;
+    }
+    .contactlink h3{
+        font-size: 2.25rem;
+    }
+    .contactlink{
+        padding-bottom: 2rem;
+    }
+    .get-in-touch-btn{
+        width: 28rem;
+        height: 28rem;
+        left: 6vh;
+    }
+    .lowerfooter h3{
+        width: 100%;
+        font-size: 1.75rem;
+    }
+    .lowerfooter h1{
+        font-size: 5rem;
+    }
+}

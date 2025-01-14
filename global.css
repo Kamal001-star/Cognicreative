@@ -1,0 +1,22 @@
+.menu {
+    display: none;
+}
+
+@media screen and (max-width:600px){
+    .menu {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:600px){
+    .navbar {
+        display: flex;
+    }
+}
+
+
