@@ -9,7 +9,7 @@
 <body>
     <main>
         <nav>
-            <h2>logo</h2>
+            <h2><a href="">logo</a></h2>
             <div class="navbar">
                 <a href="index.html">Home</a>
                 <a href="service.html">Service</a>
@@ -24,7 +24,54 @@
             <p>Transform your brand or product from great to extraordinary with our help. Fill out the form and tell us more about your project.</p>
         </section>
         <section class="form">
-          
+          <div class="leftsec">
+            <div class="uprsecleft">
+                <h3>Let's Chat</h3>
+                <a href="">contact@plymouth.design</a>
+            </div>
+            <div class="lowersecleft">
+                <p>“Plymouth's innovative approach and vibrant storytelling brought the Nike Summer Love Campaign to life, creating an unforgettable connection with our audience and boosting our seasonal sales.”</p>
+            </div>
+            <div class="profile">
+                <div class="linfo">
+                    <img src="" alt="">
+                </div>
+                <div class="Rinfo">
+                    <h6>Daniel Foster</h6>
+                    <p>Owner of Delux Burger</p>
+                </div>
+            </div>           
+          </div>
+          <div class="rightsec">
+            <form action="/submit-form" method="POST">
+                <div>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first_name" required>  
+                </div>
+                <div>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last_name" required >
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="service">Service You're Interested In</label>
+                <select id="service" name="service" >
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="web-design">Web Design</option>
+                  <option value="digital-marketing">Digital Marketing</option>
+                  <option value="app-development">App Development</option>
+                </select>
+                </div>
+                <div>
+               <label for="project-goals">Tell Us More About Your Project Goals</label>
+                <textarea id="project-goals" name="project_goals" rows="5" ></textarea>
+                </div>
+                <button type="submit">Submit</button>
+              </form>
+          </div>
         </section>
         <footer>
             <div class="upperfooter">
@@ -33,10 +80,10 @@
                     <a href="">contact@plymouth.design</a>
                 </div>
                 <div class="linksG1">
-                    <a href="">Service</a>
-                    <a href="">Work</a>
-                    <a href="">About</a>
-                    <a href="">Contact Us</a>
+                    <a href="service.html">Service</a>
+                    <a href="work.html">Work</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact Us</a>
                 </div>
                 <div class="linksG2">
                     <a href="">Careers</a>

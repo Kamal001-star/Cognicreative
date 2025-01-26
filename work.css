@@ -24,10 +24,11 @@ nav{
     align-items: center;
     width: 100%;
 }
-nav h2{
+nav h2 a{
     color: orangered;
     font-size: 1.5rem;
     font-weight: bolder;
+    text-decoration: none;
 }
 .navbar{
     display: flex;
@@ -212,7 +213,10 @@ footer a {
     left: 33vw;
     z-index: -1;
 }
-
+.get-in-touch-btn:hover{
+    background-color: orangered;
+    color: white;
+}
 
 footer {
     position: relative;
