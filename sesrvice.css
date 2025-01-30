@@ -61,7 +61,7 @@ nav {
     color: black;
   }
   .contactbutton {
-    background-color: orangered;
+    background-color: #EF4136;
     color: white;
     padding: 20px;
     border-radius: 50px;
@@ -101,7 +101,7 @@ nav {
     font-weight: 300;
 }
 .hero h1{
-    color: orangered;
+    color: #EF4136;
     letter-spacing: -.031rem;
     text-transform: uppercase;
     margin-top: 2rem;
@@ -176,7 +176,7 @@ nav {
     border-radius: 100%;
 }
 span{
-    color: orangered;
+    color: #EF4136;
 }
 .para{
     display: none;
@@ -433,7 +433,7 @@ span{
     padding: 4rem;
     width: 500px;
     height: 500px;
-    border : 5px solid orangered;
+    border : 5px solid #EF4136;
     border-radius: 100%;
     position: relative;
     text-decoration: none;
@@ -441,7 +441,7 @@ span{
     color: black;
 }
 .get-in-touch-btn a:hover{
-    background-color: orange;
+    background-color: #EF4136;
     border: 0;
     color: white;
 }
@@ -510,7 +510,7 @@ footer {
 
 }
 .lowerfooter h1 a{
-    color: orangered;
+    color: #EF4136;
     letter-spacing: -.031rem;
     text-transform: uppercase;
     margin-top: 2rem;
@@ -525,7 +525,7 @@ footer {
     margin-top: 10vh;
 }
 .lowerfooter p a{
-    color: orangered;
+    color: #ef4136;
     font-size: 1.110rem;
 }
 @media screen and (max-width:600px){

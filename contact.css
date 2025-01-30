@@ -64,7 +64,7 @@ nav {
     color: black;
   }
   .contactbutton {
-    background-color: orangered;
+    background-color: #EF4136;
     color: white;
     padding: 20px;
     border-radius: 50px;
@@ -104,7 +104,7 @@ nav {
     font-weight: 300;
 }
 .hero h1{
-    color: orangered;
+    color: #EF4136;
     letter-spacing: -.031rem;
     text-transform: uppercase;
     margin-top: 2rem;
@@ -203,7 +203,7 @@ textarea{
     padding-top: 5vh;
 }
 .form-submit{
-    background-color: orangered;
+    background-color: #EF4136;
     color: white;
     text-align: center;
     border-radius: 1200px;
@@ -282,7 +282,7 @@ footer {
 
 }
 .lowerfooter h1 a{
-    color: orangered;
+    color: #EF4136;
     letter-spacing: -.031rem;
     text-transform: uppercase;
     margin-top: 2rem;
@@ -297,7 +297,7 @@ footer {
     margin-top: 10vh;
 }
 .lowerfooter p a{
-    color: orangered;
+    color: #EF4136;
     font-size: 1.110rem;
 } 
 @media screen and (max-width:600px) {
