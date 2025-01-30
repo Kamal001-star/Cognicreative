@@ -17,35 +17,81 @@ body::-webkit-scrollbar{
     display: none;
     background-color: white
 }
-nav{
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 6vh 6vw;
+    align-items: center;
+    width: 100%;
+    position: relative; /* Added position relative */
+  }
+  .logo{
+    width: 7rem;
+    overflow:hidden;
+  }
+  .logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  .navbar a {
+    text-decoration: none;
+    padding-left: 40px;
+    font-size: 1.09rem;
+    color: black;
+  }
+  .mobile {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 2vh 6vw;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
-}
-nav h2 a{
-    color: orange;
-    font-size: 1.5rem;
-    font-weight: bolder;
-}
-.navbar{
+  }
+  .navbar-mobile {
     display: flex;
-    align-items: center;
-}
-.navbar a{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-mobile a {
     text-decoration: none;
-    padding-left: 40px;
-    font-size: 1.090rem;
+    padding-bottom: 40px;
+    font-size: 1.09rem;
     color: black;
-}
-.contactbutton{
-    background-color: orange;
+  }
+  .contactbutton {
+    background-color: orangered;
     color: white;
     padding: 20px;
     border-radius: 50px;
-    font-size: 1.090rem;
-}
+    font-size: 1.09rem;
+  }
+  
+.menu {
+    display: none;
+  }
+  
+  .nav-mobile {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 2vh 6vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-icon {
+    width: 24px;
+    height: 24px;
+  }
 .hero{
     display: flex;
     align-items: flex-start;
@@ -141,9 +187,7 @@ form {
   }
   input, select, textarea {
     width: 100%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: white white black;
+border-bottom: 1px solid black !important;
     background-color: white;
     color: black;
     border-radius: 0;
@@ -155,7 +199,10 @@ form {
     border: none;
     outline: none;
 }
-  button {
+textarea{
+    padding-top: 5vh;
+}
+.form-submit{
     background-color: orangered;
     color: white;
     text-align: center;
@@ -164,10 +211,12 @@ form {
     font-size: 1rem;
     font-weight: 400;
     min-width: 20rem;
+    border: none;
 }
-  button:hover {
-    background-color: #0056b3;
+  .form-submit:hover {
+    background-color:rgb(255, 17, 0)
   }
+
 footer {
     position: relative;
 }
@@ -179,7 +228,7 @@ footer a {
 footer {
     position: relative;
     background-color: white;
-    padding: 10vh 6vw;
+    padding: 20vh 6vw 10vh 6vw;
     border-top: 2px solid black;
 }
 .upperfooter{
@@ -232,7 +281,7 @@ footer {
     margin-top: 100px;
 
 }
-.lowerfooter h1{
+.lowerfooter h1 a{
     color: orangered;
     letter-spacing: -.031rem;
     text-transform: uppercase;
@@ -250,7 +299,7 @@ footer {
 .lowerfooter p a{
     color: orangered;
     font-size: 1.110rem;
-}
+} 
 @media screen and (max-width:600px) {
 
     .hero h3{
@@ -293,7 +342,29 @@ footer {
         width: 100%;
         font-size: 1.75rem;
     }
-    .lowerfooter h1{
+    .lowerfooter h1 a{
         font-size: 5rem;
     }
+    .menu {
+        display: block;
+      }
+      
+      .navbar {
+        display: none;
+      }
+      .nav-mobile .navbar {
+        z-index: 100;
+        background-color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      .nav-mobile.active {
+        display: flex;
+      }
+      .nav-mobile .navbar a {
+        padding: 1rem 0;
+      }
 }

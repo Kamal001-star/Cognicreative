@@ -9,15 +9,31 @@
 <body>
     <main>
         <nav>
-            <h2><a href="">logo</a></h2>
-            <div class="navbar">
-                <a href="index.html">Home</a>
-                <a href="service.html">Service</a>
-                <a href="about.html">About</a>
-                <a href="work.html">Work</a>
-                <a href="contact.html"><div class="contactbutton">Contact Us</div></a>
+            <div class="logo">
+              <img src="Images/Frame 7.png" alt="">
             </div>
-        </nav>
+            <div class="navbar">
+              <a href="index.html">Home</a>
+              <a href="service.html">Service</a>
+              <a href="about.html">About</a>
+              <a href="work.html">Work</a>
+              <a href="contact.html"><div class="contactbutton">Contact Us</div></a>
+            </div>
+            <div class="menu">
+              <button onclick="toggleMenu()">
+                <img alt="menu" src="images/menu.png" class="menu-icon" />
+              </button>
+              <div class="nav-mobile">
+                <div class="navbar">
+                  <a href="index.html">Home</a>
+                  <a href="service.html">Service</a>
+                  <a href="about.html">About</a>
+                  <a href="work.html">Work</a>
+                  <a href="contact.html"><div class="contactbutton">Contact Us</div></a>
+                </div>
+              </div>
+            </div>
+          </nav>
         <section class="hero">
             <h3>Get in Touch</h3>
             <h1>Contact</h1>
@@ -69,10 +85,11 @@
                <label for="project-goals">Tell Us More About Your Project Goals</label>
                 <textarea id="project-goals" name="project_goals" rows="5" ></textarea>
                 </div>
-                <button type="submit">Submit</button>
+                <div class="form"><button type="submit"class='form-submit'>Submit</button></div>
               </form>
           </div>
         </section>
+
         <footer>
             <div class="upperfooter">
                 <div class="contactlink">
@@ -95,11 +112,17 @@
             <div class="lowerfooter">
                 <h3>Digital Storytellers,
                     Exceptional Experiences</h3>
-                <h1>Plymouth</h1>
+                <h1><a href="index.html">Plymouth</a></h1>
                 <p>© All Rights Reserved. Template by <a href="">Chris Devine Jordan.</a> Powered by <a href="">Webflow</a></p>    
             </div>
         </footer>
     </main>
+    <script>
+        function toggleMenu() {
+          const navMobile = document.querySelector(".nav-mobile")
+          navMobile.classList.toggle("active")
+        }
+      </script>
 </body>
 </html>
         

@@ -10,36 +10,85 @@ html, body{
     width: 100%;
     font-family: 'Instrument Sans'
 }
-h3{
-    font-weight: bold;
-}
 body::-webkit-scrollbar{
     display: none;
     background-color: white
 }
-nav{
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 6vh 6vw;
+    align-items: center;
+    width: 100%;
+    position: relative; /* Added position relative */
+  }
+  .logo{
+    width: 7rem;
+    overflow:hidden;
+  }
+  .logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  .navbar a {
+    text-decoration: none;
+    padding-left: 40px;
+    font-size: 1.09rem;
+    color: black;
+  }
+  .mobile {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 2vh 6vw;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
-}
-nav h2 a{
-    color: orangered;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    text-decoration: none;
-}
-.navbar{
+  }
+  .navbar-mobile {
     display: flex;
-    align-items: center;
-}
-.navbar a{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-mobile a {
     text-decoration: none;
-    padding-left: 40px;
-    font-size: 1.090rem;
+    padding-bottom: 40px;
+    font-size: 1.09rem;
     color: black;
-}
+  }
+  .contactbutton {
+    background-color: orangered;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 1.09rem;
+  }
+  
+.menu {
+    display: none;
+  }
+  
+  .nav-mobile {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 2vh 6vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-icon {
+    width: 24px;
+    height: 24px;
+  }
 .contactbutton{
     background-color: orangered;
     color: white;
@@ -175,17 +224,36 @@ nav h2 a{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    margin: 25vh 6vh 40vh 6vh;
-    z-index: 1;
+    margin: 25vh 6vh 0 6vh;
 }
 .contact h3{
     text-align: center;
-    padding-bottom: 30vh;
+    padding-bottom: 10vh;
     max-width: 60rem;
     font-size: 5rem;
     font-weight: normal;
 
 }
+.get-in-touch-btn a{
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    width: 500px;
+    height: 500px;
+    border : 5px solid orangered;
+    border-radius: 100%;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: black;
+  }
+  .get-in-touch-btn a:hover{
+    background-color: orange;
+    border: 0;
+    color: white;
+  }
 
 footer {
     position: relative;
@@ -195,27 +263,6 @@ footer a {
     font-size: 32px;
     text-decoration: none;
     color: black;
-}
-
-.get-in-touch-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem;
-    width: 500px;
-    height: 500px;
-
-    border : 5px solid orangered;
-    border-radius: 100%;
-
-    position: absolute;
-    top: -350px;
-    left: 33vw;
-    z-index: -1;
-}
-.get-in-touch-btn:hover{
-    background-color: orangered;
-    color: white;
 }
 
 footer {
@@ -276,7 +323,7 @@ footer {
     margin-top: 100px;
 
 }
-.lowerfooter h1{
+.lowerfooter h1 a{
     color: orangered;
     letter-spacing: -.031rem;
     text-transform: uppercase;
@@ -366,7 +413,29 @@ footer {
         width: 100%;
         font-size: 1.75rem;
     }
-    .lowerfooter h1{
+    .lowerfooter h1 a{
         font-size: 5rem;
     }
+    .menu {
+        display: block;
+      }
+      
+      .navbar {
+        display: none;
+      }
+      .nav-mobile .navbar {
+        z-index: 100;
+        background-color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      .nav-mobile.active {
+        display: flex;
+      }
+      .nav-mobile .navbar a {
+        padding: 1rem 0;
+      }
 }

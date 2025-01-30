@@ -11,69 +11,85 @@ html, body{
     width: 100%;
     font-family: 'Instrument Sans'
 }
-h3{
-    font-weight: bold;
-}
+
 body::-webkit-scrollbar{
     display: none;
     background-color: white
 }
-nav{
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 6vh 6vw;
+    align-items: center;
+    width: 100%;
+    position: relative; /* Added position relative */
+  }
+  .logo{
+    width: 7rem;
+    overflow:hidden;
+  }
+  .logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  .navbar a {
+    text-decoration: none;
+    padding-left: 40px;
+    font-size: 1.09rem;
+    color: black;
+  }
+  .mobile {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 2vh 6vw;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
-}
-nav h2 a{
+  }
+  .mobile h2 {
     color: orange;
     font-size: 1.5rem;
     font-weight: bolder;
-}
-.navbar{
+  }
+  .navbar-mobile {
     display: flex;
-    align-items: center;
-}
-.navbar a{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-mobile a {
     text-decoration: none;
-    padding-left: 40px;
-    font-size: 1.090rem;
+    padding-bottom: 40px;
+    font-size: 1.09rem;
     color: black;
-}
-.contactbutton{
-    background-color: orange;
+  }
+  .contactbutton {
+    background-color: orangered;
     color: white;
     padding: 20px;
     border-radius: 50px;
-    font-size: 1.090rem;
-}
+    font-size: 1.09rem;
+  }
 .hero{
     display: flex;
     align-items: center;
-    margin: 10vh 8vw;
+    margin: 10vh 0 10vh 6vw;
     justify-content: space-between;
 }
 .heroL h3{
-    font-size: 3rem;
+    font-size: 5rem;
+    font-weight: 300;
     padding-bottom: 20px;
-}
-.heroL p{
-    color: rgba(0, 0, 0, 0.554);
-    margin-bottom: 1.5rem;
-    font-size: 1.125rem;
-    line-height: 1.6;
-}
-.heroL a{
-    text-decoration: none;
-    font-size: 1.125rem;
-    color: black;
-    opacity: 40;
 }
 .heroR{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    padding: 3vw;
+    padding-left: 3vw;
 }
 .image1 {
     width: 27vw;
@@ -108,6 +124,7 @@ nav h2 a{
 }
 .excelleft h3{
     font-size: 3rem;
+    font-weight: 300;
     padding-bottom: 20px;
 }
 .excelleft p{
@@ -119,7 +136,7 @@ nav h2 a{
     text-decoration: none;
     font-size: 1.125rem;
     color: rgb(254, 253, 253);
-    font-weight: 100;
+    font-weight: normal;
 }
 .excelright{
     width: 60%;
@@ -237,6 +254,7 @@ nav h2 a{
     margin-top: 0;
     margin-bottom: 1rem;
     font-size: 3rem;
+    font-weight: 300;
     line-height: 1.15;
 }
 .OLcontent p{
@@ -299,61 +317,54 @@ nav h2 a{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    margin: 25vh 6vh 40vh 6vh;
+    margin: 25vh 6vw 0 6vw;
     z-index: 1;
 }
 .contact h3{
     text-align: center;
-    padding-bottom: 30vh;
+    padding-bottom: 10vh;
     max-width: 60rem;
     font-size: 5rem;
     font-weight: normal;
 
 }
-
-footer {
-    position: relative;
-}
-
-footer a {
-    font-size: 32px;
-    text-decoration: none;
-    color: black;
-}
-
-.get-in-touch-btn{
+.get-in-touch-btn a{
+    top: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 4rem;
     width: 500px;
     height: 500px;
-
     border : 5px solid orangered;
     border-radius: 100%;
-
-    position: absolute;
-    top: -350px;
-    left: 33vw;
-    z-index: -1;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: black;
 }
-
-
+.get-in-touch-btn a:hover{
+    background-color: orange;
+    border: 0;
+    color: white;
+}
 footer {
     position: relative;
     background-color: white;
-    padding: 10vh 6vw;
+    padding: 20vh 6vw 10vh 6vw;
     border-top: 2px solid black;
-
 }
-
+footer a {
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+}
 .upperfooter{
     background-color: white;
     align-items: flex-start;
     display: flex;
     gap: 20rem;
     padding-bottom: 40px;
-    z-index: 2;
 }
 .contactlink h3{
     letter-spacing: -.031rem;
@@ -397,7 +408,7 @@ footer {
     margin-top: 100px;
 
 }
-.lowerfooter h1{
+.lowerfooter h1 a{
     color: orangered;
     letter-spacing: -.031rem;
     text-transform: uppercase;
@@ -407,6 +418,7 @@ footer {
     font-weight: 400;
     line-height: .75;
     position: relative;
+    text-decoration: none;
 }
 .lowerfooter p{
     font-size: 1.110rem;
@@ -416,6 +428,29 @@ footer {
     color: orangered;
     font-size: 1.110rem;
 }
+
+.menu {
+    display: none;
+  }
+  
+  .nav-mobile {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 2vh 6vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-icon {
+    width: 24px;
+    height: 24px;
+  }
+
 @media screen and (max-width:600px){
     h3{
         font-size: 2.25rem;
@@ -522,18 +557,33 @@ footer {
     .contactlink{
         padding-bottom: 2rem;
     }
-    .get-in-touch-btn{
-        width: 28rem;
-        height: 28rem;
-        left: 6vh;
-
-    }
     .lowerfooter h3{
         width: 100%;
         font-size: 1.75rem;
     }
-    .lowerfooter h1{
+    .lowerfooter h1 a{
         font-size: 5rem;
     }
-
+    .menu {
+        display: block;
+      }
+      
+      .navbar {
+        display: none;
+      }
+      .nav-mobile .navbar {
+        z-index: 100;
+        background-color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      .nav-mobile.active {
+        display: flex;
+      }
+      .nav-mobile .navbar a {
+        padding: 1rem 0;
+      }
 }
